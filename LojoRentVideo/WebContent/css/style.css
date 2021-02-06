@@ -1,0 +1,146 @@
+:root{
+    --red: #e50914;
+    --gray: #434242;
+    --black: black;
+    --white: white;
+    --font: "Noto Sans Bassa Vah", sans-serif;
+
+    /*TRANSITIONS EFFECTS*/
+    /*menu*/
+    --mouse-is-over-menu: linear 0.2s;
+    --mouse-is-hover-menu:color  0.2s linear 0.2s;
+
+    /*Normal Events*/
+
+    --mouse-is-over-normal: linear 0.1s;
+    --mouse-is-hover-mormal:color  0.1s linear 0.1s;
+
+
+}
+
+/*GENERAL*/
+html{
+    font-family: var(--font);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+    background-color: var(--gray);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+
+header{
+    background-color: var(--black);
+    height: 100px;
+    overflow: hidden;;
+}
+header h1{
+    margin-left: 1em;
+    letter-spacing: 1pt;
+    color: var(--red);
+    font-style: italic;
+}
+
+
+main {
+    overflow: hidden;
+    
+    
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+footer a{
+    color: var(--red);
+    transition: var(--mouse-is-over-normal);
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--gray);
+    transition: var(--mouse-is-hover-mormal);
+    padding: .5em;
+}
+
+fieldset{
+    border-style: none;
+}
+
+
+
+/*ESPECIFICOS*/
+
+.loging_title{
+    margin-left: 4em;
+    font-weight: bolder;
+    text-shadow: 5px 5px 3px var(--black);
+}
+
+/*Loging form*/
+#logingform{
+    padding: 1em;
+    background-color: var(--black);
+    width: 60vh;
+    margin: 0 auto;
+    text-align: center;
+    /*TODO: ASK ALEJANDRO*/
+    box-shadow: 11pt 10pt 4pt 5pt var(--red);
+}
+
+
+/*Fieldeset loging form --> for buttons*/
+#logingform>fieldset{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#logingform>fieldset>*{
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+/*submit*/
+#logingform>#submit{
+    margin: 0 auto;
+}
+
+
+/*Forms errors for jquery extension*/
+.error{
+    color: red;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Class for forms*/
+.form-buttons{
+    display: block;
+    color: black;
+    font-weight: bolder;
+    background-color: var(--white);
+    width: 70px;
+    padding: .5em;
+    font-size: 10pt;
+    border: none;
+    text-align: center;
+    transition: var(--mouse-is-over-normal);
+}
+.form-buttons:hover{
+    background-color: red;
+    color: white;
+    transition: var(--mouse-is-hover-mormal);
+}
