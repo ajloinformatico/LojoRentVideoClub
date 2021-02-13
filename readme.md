@@ -23,8 +23,6 @@ _Tools and technologies:_
   * viodeoclub database and seeders .
 
 ### Structure: 🧱
-    
-_Structure of the project is as follows:_
 
 * ***Back:***
   * In JAVA resources package is.infolojo the project on the server side is built following a DAO architecture .
