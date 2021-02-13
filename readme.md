@@ -132,7 +132,7 @@ _Right now im workin in another projects but i will buld .war with the aplicatio
 
 ## contributing 🖇️
 
-You can [Fork my work](https://gist.github.com/ajloinformatico) and use it as a base or improve it
+You can [Fork my work](https://github.com/ajloinformatico) and use it as a base or improve it
 
 ## Web Site 🌐
 
@@ -146,9 +146,8 @@ Im open source. Just ❤️ GitHub
 
 _This web aplication has been developed by:_
 
-* **Antonio José Lojo Ojeda** - *Trabajo Inicial* - [ajloinformatico](https://gist.github.com/ajloinformatico).
+* **Antonio José Lojo Ojeda** - *Trabajo Inicial* - [ajloinformatico](https://github.com/ajloinformatico).
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
 ## License 📄
 _I'm open source (CC BY-NC) [INFOLOJO](https://www.infolojo.es)._
