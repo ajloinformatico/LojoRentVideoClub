@@ -35,12 +35,12 @@ _Structure of the project is as follows_
 
     ![Servlets](./img/servlets.png)
 
-* ***Front***
+* ***Front:***
   * At Web Content In ./WebContent respectively there are both the client and the libraries (.jar) that I use in the project (<b>Mysql connector && Google.Json</b>)
   
     ![Front](./img/front.png)
 
-* ***DataBase***
+* ***DataBase:***
   * As database i have use For the database I have used MySQL and the WorkBench tool to create the scripts
    
     ![MysqlScripts](./img/scripts.png)
@@ -83,7 +83,7 @@ folowing instructions
 
 _1 MySQL 8.9 or hihg, JAVA 11, Eclipse Enterprise & Tomcat 8.5_
 
-### Instalación 🔧
+### Install and Run 🔧
 
 _2 Install tomcat 8.5 and import it onn eclipse_
 
@@ -117,7 +117,7 @@ _7 add project to Tomcat 8.5_
 ![db](./img/addTomcat.png)
 
 
-## Executing Ejecutando las pruebas ⚙️
+## Executing ⚙️
 
 _Execute Tomcat and go to_
 
