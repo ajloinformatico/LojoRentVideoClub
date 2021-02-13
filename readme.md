@@ -1,5 +1,5 @@
 # LOJO RENT VIDEO
-REST API Web Application. Encoded in JAVA following the DAO design pattern on a TOMCAT 8.5 server, from the application client it makes AJAX requests simulating the operation of a video store
+REST API Web Application. Encoded in JAVA following the DAO design pattern on a TOMCAT 8.5 server. The application client has been maked by AJAX requests simulating the operation of a video store.
 
 ## Developed with 🛠️
 
