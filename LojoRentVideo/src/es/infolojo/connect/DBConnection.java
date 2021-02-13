@@ -18,7 +18,7 @@ public class DBConnection {
 	/**Parametros de conexion*/
     static String bd = "videoclub";
     static String login = "root";
-    static String password = "Antoniojose@10";
+    static String password = "";//Input here your user and pass of mariadb
     static String url = "jdbc:mysql://localhost/"+bd;
     Connection connection = null;
 
