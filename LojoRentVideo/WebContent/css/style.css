@@ -1,0 +1,311 @@
+:root{
+    --red: #e50914;
+    --gray: #222;
+    --black: black;
+    --white: white;
+    --Menu-color: #de0000;
+    --green: #16ff1f;
+    --font: "Noto Sans Bassa Vah", sans-serif;
+
+    /*TRANSITIONS EFFECTS*/
+    /*menu*/
+    --mouse-is-over-menu: linear 0.2s;
+    --mouse-is-hover-menu:color  0.2s linear 0.2s;
+
+    /*Normal Events*/
+
+    --mouse-is-over-normal: linear 0.1s;
+    --mouse-is-hover-mormal:color  0.1s linear 0.1s;
+
+
+}
+
+/*GENERAL*/
+html{
+    font-family: var(--font);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+    background-color: var(--gray);
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+
+header{
+    background-color: var(--black);
+    max-height: 100px;
+    overflow: hidden;;
+}
+header h1{
+    margin-left: 1em;
+    letter-spacing: 1pt;
+    color: var(--red);
+    font-style: italic;
+    /*! box-shadow: 3px 3px aliceblue; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: white;
+}
+
+
+
+main {
+    /*! overflow: hidden; */
+
+
+    box-sizing: border-box;
+    text-align: center;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+footer a{
+    color: var(--red);
+    transition: var(--mouse-is-over-normal);
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: var(--gray);
+    transition: var(--mouse-is-hover-mormal);
+    padding: .5em;
+}
+
+
+/*TODO: CHECK IT*/
+#noFixed{
+    position: relative;
+    margin-top: 2em;
+}
+
+
+
+/*font-awesome*/
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--red);
+    margin-bottom: 3em;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li:last-child{
+    padding-left: 2em;
+}
+
+
+/*Icons buttons*/
+span{
+    cursor: pointer;
+    transition: var(--mouse-is-over-menu);
+}
+span:hover{
+    transition: var(--mouse-is-hover-menu);
+    color: var(--black);
+}
+
+
+/*ESPECIFICOS*/
+
+.loging_title{
+    /*! margin-left: 4em; */
+    font-weight: bolder;
+    text-shadow: 3px 3px var(--black);
+}
+
+/*Loging form*/
+#logingform, #userform{
+    padding: 1em;
+    background-color: var(--black);
+    width: 60vh;
+    margin: 0 auto;
+    text-align: center;
+    /*TODO: ASK ALEJANDRO*/
+    box-shadow: 4pt 3pt var(--red);
+    /*! margin: 0 auto; */
+}
+
+
+/*Fieldeset loging form --> for buttons*/
+#logingform>div, #userform>div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 202px;
+    margin: 0 auto;
+}
+
+/*Forms errors for jquery extension*/
+.error{
+    color: red;
+    display: block;
+    margin: 0 auto;
+}
+#error-back{
+    color: red;
+}
+
+/*Class for forms*/
+.form-buttons{
+    display: block;
+    color: black;
+    font-weight: bolder;
+    background-color: var(--red);
+    width: 50%;
+    padding: .5em;
+    margin-top: 1.5em;
+    font-size: 10pt;
+    border: solid;
+    text-align: center;
+    transition: var(--mouse-is-over-normal);
+    cursor: pointer;
+    /*! transition: all ease; */
+}
+.form-buttons:hover{
+    background-color: red;
+    color: white;
+    transition: var(--mouse-is-hover-mormal);
+}
+/*FILMS TABLE*/
+#films thead{
+    padding-left: 1em;
+
+
+}
+.section-films{
+
+    background-color: var(--black);
+    box-shadow: 4pt 3pt var(--red);
+    width: 100vh; /*fits table size*/
+    margin: 0 auto;
+    padding-bottom: 2em;
+    padding-top: .4em;
+}
+
+.section-films>h2{
+    letter-spacing: 1pt;
+    color: var(--red);
+    font-style: italic;
+}
+
+.divfilms{
+    display: flex;
+    justify-content: center;
+
+}
+
+#toby>tr>td>span:hover{
+    color: red;
+}
+
+/*First section of profile section shows name, money and premium*/
+.user-profile-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 1em;
+}
+.user-profile-title>*{
+    display: block;
+}
+
+
+/*PREMIUM BUTTON*/
+#premium-info{
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    border-style: solid ;
+    border-radius: 15%;
+    transition: var(--mouse-is-over-normal);
+}
+#premium-info:hover{
+    color: white;
+    transition: var(--mouse-is-hover-mormal);
+    border-color: white;
+}
+
+/*this class will be added to #premium-info*/
+.premium{
+    background-color: var(--green);
+    color: black;
+    font-weight: bolder;
+}
+/*this class will be added to #premium-info if
+  user have premium buy*/
+.nopremium{
+    background-color: var(--red);
+    color: black;
+}
+
+#user-monoey{
+    font-weight: bolder;
+    color: var(--green);
+    box-shadow: black 1px 2px 2px;
+}
+
+
+/*User flex for form and list user films*/
+.flex-user{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    min-width: 350px;
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+/*Users films*/
+.films-user{
+}
+.films-user>table{
+    background-color: var(--black);
+    box-shadow: 4pt 3pt var(--red);
+    margin: 0 auto;
+    padding: 2em;
+}
+/*user form*/
+.userform{
+    margin: 0 auto;
+    background-color: var(--black);
+    box-shadow: 4pt 3pt var(--red);
+    padding: 2em;
+}
+
+.userform i{
+    margin-bottom: 1em;
+}
+
+.userform>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
